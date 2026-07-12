@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopSphere | Home</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="home">
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="index.html">ShopSphere</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="cart.html">Cart</a>
+        <a href="checkout.html">Checkout</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="login.html">Login</a>
+      </nav>
+      <button class="menu-button" type="button"></button>
+    </div>
+  </header>
+
+  <main class="container page-shell">
+    <section class="hero">
+      <div class="hero-card fade-in">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <span class="hero-label">Curated e-commerce experience</span>
+            <h1 class="hero-title">A sharper way to shop online.</h1>
+            <p class="hero-subtitle">
+              Browse curated collections, compare prices instantly, and move from discovery to checkout with a clean,
+              premium storefront experience.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#featuredGrid">Shop featured</a>
+              <a class="button button-secondary" href="dashboard.html">View dashboard</a>
+            </div>
+            <div class="hero-stats">
+              <div class="stat-card">
+                <span class="stat-value">20+</span>
+                <span class="stat-label">Curated products</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-value">4.9★</span>
+                <span class="stat-label">Average customer rating</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-value">24/7</span>
+                <span class="stat-label">Store access</span>
+              </div>
+            </div>
+          </div>
+
+          <aside class="hero-panel" aria-label="Product search and highlights">
+            <div class="hero-panel-card">
+              <div class="hero-panel-header">
+                <h2>Discover the edit</h2>
+                <p class="helper-text">Search by keyword, category, and price range.</p>
+              </div>
+              <form class="search-bar" id="homeFilterForm">
+                <label class="field-group" for="searchInput">
+                  <span class="field-label">Search</span>
+                  <input id="searchInput" type="search" placeholder="Search products">
+                </label>
+                <label class="field-group" for="categoryFilter">
+                  <span class="field-label">Category</span>
+                  <select id="categoryFilter">
+                    <option value="all">All Categories</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Fashion">Fashion</option>
+                    <option value="Home">Home</option>
+                    <option value="Beauty">Beauty</option>
+                    <option value="Sports">Sports</option>
+                  </select>
+                </label>
+                <label class="field-group" for="minPrice">
+                  <span class="field-label">Min price</span>
+                  <input id="minPrice" type="number" min="0" placeholder="0">
+                </label>
+                <label class="field-group" for="maxPrice">
+                  <span class="field-label">Max price</span>
+                  <input id="maxPrice" type="number" min="0" placeholder="100000">
+                </label>
+                <button class="button button-primary search-submit" type="submit">Apply filters</button>
+              </form>
+              <div class="hero-showcase">
+                <div class="showcase-card">
+                  <strong>Featured today</strong>
+                  <p>Premium picks with fast browsing, quick-add actions, and clear collection highlights.</p>
+                </div>
+                <div class="mini-grid">
+                  <div class="mini-card mini-card-blue">
+                    <span class="mini-value">01</span>
+                    <span class="mini-label">Curated picks</span>
+                    <span class="mini-caption">Hand-selected products worth exploring first.</span>
+                  </div>
+                  <div class="mini-card mini-card-amber">
+                    <span class="mini-value">02</span>
+                    <span class="mini-label">Secure checkout</span>
+                    <span class="mini-caption">Fast, protected checkout with order tracking.</span>
+                  </div>
+                  <div class="mini-card mini-card-teal">
+                    <span class="mini-value">03</span>
+                    <span class="mini-label">Fast delivery</span>
+                    <span class="mini-caption">Reliable shipping for a smoother experience.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Shop by category</h2>
+          <p class="section-subtitle">Quick access to the most popular departments.</p>
+        </div>
+      </div>
+      <div class="chip-row">
+        <button class="chip" type="button">Electronics</button>
+        <button class="chip" type="button">Fashion</button>
+        <button class="chip" type="button">Home</button>
+        <button class="chip" type="button">Beauty</button>
+        <button class="chip" type="button">Sports</button>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Featured products</h2>
+          <p class="section-subtitle">Hand-picked items with strong ratings and high demand.</p>
+        </div>
+      </div>
+      <div id="featuredGrid" class="grid product-grid"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Latest arrivals</h2>
+          <p class="section-subtitle">Fresh inventory with modern styling and fast shipping potential.</p>
+        </div>
+      </div>
+      <div id="latestGrid" class="grid product-grid"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-bar">
+      <div>
+        <strong>ShopSphere</strong>
+        <div class="helper-text">Designed for a clean, premium shopping experience.</div>
+      </div>
+      <div class="footer-links">
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+        <a href="cart.html">Cart</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast"></div>
+  <script src="js/app.js"></script>
+</body>
+</html>
