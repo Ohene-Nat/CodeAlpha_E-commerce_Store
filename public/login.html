@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopSphere | Login</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="login">
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="index.html">ShopSphere</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="register.html">Register</a>
+      </nav>
+      <button class="menu-button" type="button"></button>
+    </div>
+  </header>
+
+  <main class="container page-shell">
+    <section class="auth-shell fade-in">
+      <div class="auth-content">
+        <div class="auth-hero">
+          <span class="eyebrow">Welcome back</span>
+          <h1>Sign in to keep your cart, orders, and profile in sync.</h1>
+          <p>Access your dashboard, checkout faster, and manage your previous purchases from any device.</p>
+        </div>
+
+        <div class="panel">
+          <h2>Login</h2>
+          <p class="helper-text">Use the same email and password you registered with.</p>
+          <form data-auth-form="login" class="form-stack" style="margin-top: 1rem;">
+            <input class="form-control" name="email" type="email" placeholder="Email address" required>
+            <div class="password-field">
+              <input class="form-control" name="password" type="password" placeholder="Password" required data-password-input>
+              <button class="password-toggle" type="button" data-password-toggle aria-label="Show password">Show</button>
+            </div>
+            <button class="button button-primary" type="submit" style="width:100%;">Login</button>
+          </form>
+          <p class="helper-text" style="margin-top: 1rem;">New here? <a href="register.html"><strong>Create an account</strong></a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="toast" class="toast"></div>
+  <script src="js/app.js"></script>
+</body>
+</html>

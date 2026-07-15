@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopSphere | Register</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="register">
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="index.html">ShopSphere</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+      </nav>
+      <button class="menu-button" type="button"></button>
+    </div>
+  </header>
+
+  <main class="container page-shell">
+    <section class="auth-shell fade-in">
+      <div class="auth-content">
+        <div class="auth-hero">
+          <span class="eyebrow">Join the store</span>
+          <h1>Create your account in less than a minute.</h1>
+          <p>Save your cart, track your orders, and unlock a smoother checkout experience with one secure login.</p>
+        </div>
+
+        <div class="panel">
+          <h2>Create account</h2>
+          <p class="helper-text">All fields are required and your password is securely hashed.</p>
+          <form data-auth-form="register" class="form-stack" style="margin-top: 1rem;">
+            <input class="form-control" name="fullname" placeholder="Full name" required>
+            <input class="form-control" name="email" type="email" placeholder="Email address" required>
+            <div class="password-field">
+              <input class="form-control" name="password" type="password" placeholder="Password" required data-password-input>
+              <button class="password-toggle" type="button" data-password-toggle aria-label="Show password">Show</button>
+            </div>
+            <div class="password-field">
+              <input class="form-control" name="confirmPassword" type="password" placeholder="Confirm password" required data-password-input>
+              <button class="password-toggle" type="button" data-password-toggle aria-label="Show password">Show</button>
+            </div>
+            <button class="button button-primary" type="submit" style="width:100%;">Register</button>
+          </form>
+          <p class="helper-text" style="margin-top: 1rem;">Already have an account? <a href="login.html"><strong>Login</strong></a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="toast" class="toast"></div>
+  <script src="js/app.js"></script>
+</body>
+</html>
