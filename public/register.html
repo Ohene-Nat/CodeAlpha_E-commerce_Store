@@ -12,7 +12,9 @@
       <a class="brand" href="index.html">ShopSphere</a>
       <nav class="nav-links">
         <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
         <a href="login.html">Login</a>
+        <div class="nav-auth" id="navAuth"></div>
       </nav>
       <button class="menu-button" type="button"></button>
     </div>
@@ -32,6 +34,7 @@
           <p class="helper-text">All fields are required and your password is securely hashed.</p>
           <form data-auth-form="register" class="form-stack" style="margin-top: 1rem;">
             <input class="form-control" name="fullname" placeholder="Full name" required>
+            <input class="form-control" name="username" placeholder="Username" pattern="[a-zA-Z0-9_.]{3,30}" title="3-30 characters: letters, numbers, dots, and underscores" required>
             <input class="form-control" name="email" type="email" placeholder="Email address" required>
             <div class="password-field">
               <input class="form-control" name="password" type="password" placeholder="Password" required data-password-input>
