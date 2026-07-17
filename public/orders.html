@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopSphere | Orders</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="orders">
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="index.html">ShopSphere</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="cart.html">Cart</a>
+        <div class="nav-auth" id="navAuth"></div>
+      </nav>
+      <button class="menu-button" type="button"></button>
+    </div>
+  </header>
+
+  <main class="container page-shell">
+    <div class="page-head">
+      <div>
+        <h1 class="page-title">Orders</h1>
+        <p class="page-copy">Browse your purchase history with status and totals laid out in a clear, modern table.</p>
+      </div>
+    </div>
+
+    <section class="panel fade-in">
+      <div id="ordersTable" class="loading-surface">Loading orders...</div>
+    </section>
+  </main>
+
+  <div id="toast" class="toast"></div>
+  <script src="js/app.js"></script>
+</body>
+</html>
