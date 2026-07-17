@@ -12,10 +12,10 @@
       <a class="brand" href="index.html">ShopSphere</a>
       <nav class="nav-links">
         <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
         <a href="cart.html">Cart</a>
-        <a href="checkout.html">Checkout</a>
         <a href="dashboard.html">Dashboard</a>
-        <a href="login.html">Login</a>
+        <div class="nav-auth" id="navAuth"></div>
       </nav>
       <button class="menu-button" type="button"></button>
     </div>
@@ -72,6 +72,8 @@
                     <option value="Home">Home</option>
                     <option value="Beauty">Beauty</option>
                     <option value="Sports">Sports</option>
+                    <option value="Toys">Toys</option>
+                    <option value="Books">Books</option>
                   </select>
                 </label>
                 <label class="field-group" for="minPrice">
@@ -121,11 +123,13 @@
         </div>
       </div>
       <div class="chip-row">
-        <button class="chip" type="button">Electronics</button>
-        <button class="chip" type="button">Fashion</button>
-        <button class="chip" type="button">Home</button>
-        <button class="chip" type="button">Beauty</button>
-        <button class="chip" type="button">Sports</button>
+        <button class="chip" type="button" data-category="Electronics">Electronics</button>
+        <button class="chip" type="button" data-category="Fashion">Fashion</button>
+        <button class="chip" type="button" data-category="Home">Home</button>
+        <button class="chip" type="button" data-category="Beauty">Beauty</button>
+        <button class="chip" type="button" data-category="Sports">Sports</button>
+        <button class="chip" type="button" data-category="Toys">Toys</button>
+        <button class="chip" type="button" data-category="Books">Books</button>
       </div>
     </section>
 
@@ -157,6 +161,7 @@
         <div class="helper-text">Designed for a clean, premium shopping experience.</div>
       </div>
       <div class="footer-links">
+        <a href="products.html">Products</a>
         <a href="login.html">Login</a>
         <a href="register.html">Register</a>
         <a href="cart.html">Cart</a>
